@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #a58d8d;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-container {
+      background-color: #444040;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #54e759;
+      color: #ad5454;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+
+    }
+
+    button:hover {
+      background-color: #20f32a;
+    }
+    nav li{
+  display: inline-block;
+  list-style: none;
+  padding: 0px 20px;
+}
+a,button{
+
+  font-size: 15px;
+  padding: 0px;
+  font-weight: 500;
+  color: rgba(14, 13, 13, 0.904);
+  cursor: pointer;
+  text-decoration: none;
+  /* margin: 5px; */
+  margin-left: 2px;
+}
+button{
+  background-color: rgb(108, 127, 128);
+  padding: 9px 25px;
+  border: none;
+  border-radius: 25px;
+  transition: all 0.4s ease 0s;
+}
+nav li a:hover{
+
+  color: rgb(230, 15, 122);
+  transition: all0.4s ease 0s;
+}
+button:hover{
+  background-color: #eaee04f5;
+}
+  </style>
+</head>
+<body>
+<div style="margin-top: -500px;">
+
+<header>
+
+
+    <ul>
+        <button><li ><a href="iphone.html">Home</a> </li></button>
+       <button><li><a href="nokia.html">MEN</a></li></button>
+       <button><li><a href="samsung.html">WOMEN</a></li></button>
+        <button><li><a href="nokia.html">About us</a></li></button>
+        <button><a href="login.html">login</a></button>
+        <button><li><a href="oppo.html">Contact us</a></li></button>
+        <button><li><a href="login1.html">Registration Form</a></li></button>
+</ul>
+</header>
+</div>
+<div style="margin-left: -55%;">
+<div class="login-container">
+  <h2 style="color: #b4cdd1;">Login Page</h2>
+  <div class="form-group">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+  </div>
+  <div class="form-group">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+  </div>
+  <button id="loginBtn">Login</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('#loginBtn').click(function () {
+      var username = $('#username').val();
+      var password = $('#password').val();
+
+      // Here, you can add your login logic
+      // For a simple example, let's just alert the entered username and password
+      alert('Username: ' + username + '\nPassword: ' + password);
+    });
+  });
+</script>
+</div>
+</body>
+</html>
